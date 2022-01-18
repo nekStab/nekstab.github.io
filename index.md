@@ -42,3 +42,5 @@ cd ~/nekStab/examples/cylinder/1_2baseflow/newton
 ./cmpile.sh all
 nekbmpi 1cyl 4
 ```
+
+For more informations to build the code on Mac OS or about optional packages are available in the [**Documentation**](https://ricardofrantz.github.io/nekStabDoc/en/master/index.html).
