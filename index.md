@@ -2,11 +2,11 @@
 layout: default
 ---
 
-Transition to turbulence is a long-standing problem in fluid dynamics with far reaching consequences, both from an academic and industrial point of view.
-Numerous tools from dynamical system theory can be used to improve our understanding, yet, few are available for generic [CFD](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) solvers.
+Transition to turbulence is a long-standing problem in fluid dynamics
+Numerous tools from dynamical system theory can be used to improve our understanding of this process, yet, few libraries are available for generic [CFD](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) solvers.
 **nekStab** is one of them.
-Its aim is to extend the capabilities of [Nek5000](https://nek5000.mcs.anl.gov/), a spectral element solver well established in the academic hydrodynamic and aerodynamic community.
-Leveraging Krylov-based techniques and Nek5000's high-performances capabilities, **nekStab** provides a set of algorithms to compute (stable and unstable) fixed points and periodic orbits of the Navier-Stokes equations as well as quantifying their stability through eigenvalue or singular value analysis.
+Its aim is to extend the capabilities of [Nek5000](https://nek5000.mcs.anl.gov/), a well established spectral element solver in the academic hydrodynamic and aerodynamic community.
+Leveraging Krylov-based techniques and Nek5000's high-performance time-stepping capabilities, **nekStab** provides a set of algorithms to compute stable and unstable fixed points or periodic orbits of the Navier-Stokes equations as well as quantifying their stability properties through eigenvalue or singular value analysis.
 
 # Getting started
 
@@ -43,4 +43,4 @@ cd ~/nekStab/examples/cylinder/1_2baseflow/newton
 nekbmpi 1cyl 4
 ```
 
-For more informations to build the code on Mac OS or about optional packages are available in the [**Documentation**](https://ricardofrantz.github.io/nekStabDoc/en/master/index.html).
+More information about compiling the code on Mac OS or optional packages is available in the [**Documentation**](https://ricardofrantz.github.io/nekStabDoc/en/master/index.html).
