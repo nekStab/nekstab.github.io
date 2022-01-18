@@ -17,7 +17,7 @@ Both of them can be installed on Ubuntu/Debian distros using the following comma
 
 ```
 sudo apt-get -y install libmpich-dev libopenblas-dev cmake m4
-``**
+```
 
 **Cloning the repository**
 
