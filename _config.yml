@@ -1,9 +1,10 @@
 title: nekStab
 description: nekStab is a toolbox for bifurcation analysis for the CFD solver Nek5000
-show_downloads: false
+show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
 github:
   repository_name: nekStab
   repository_url: https://github.com/ricardofrantz/nekStab
   is_project_page: true
+  owner_name: Jean-Christophe Loiseau and Ricardo Frantz
