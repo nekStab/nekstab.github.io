@@ -60,3 +60,18 @@ The *selective frequency damping* method proposed by [Akervik et al. (2006)](htt
 For periodic orbits, additional algorithms include *Dynamic Mode Tracking* by [Queguineur et al. (2019)](https://aip.scitation.org/doi/abs/10.1063/1.5085474) and *Time-delayed Feedback* by [Shaabani-Ardali et al. (2017)](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.2.113904).
 - **Eigenvalue and singular value analysis :** Asymptotic and short-time instabilities are governed by the eigenvalues and singular values, respectively, of the linearized Navier-Stokes operator.
 In **nekStab**, these are computed using a straightforward implementation of the Krylov-Schur solver originally proposed by [Stewart (2002)](https://epubs.siam.org/doi/10.1137/S0895479800371529).
+
+# Citation
+
+If you use **nekStab**, please consider citing one of the following papers :
+- [Loiseau et al. (*J. Fluid Mech.*, 2014)] describes the first implementation of the Arnoldi solver in Nek5000.
+```bibtex
+@article{jfm:loiseau:2014,
+    title={Investigation of the roughness-induced transition: global stability analyses and direct numerical simulations},
+    author={Loiseau, J.-Ch. and Robinet, J.-Ch. and Cherubini, S. and Leriche, E.},
+    journal={J. Fluid Mech.},
+    volume={760},
+    pages={175--211},
+    year={2014},
+}
+```
