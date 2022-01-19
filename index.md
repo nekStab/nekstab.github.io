@@ -64,6 +64,17 @@ In **nekStab**, these are computed using a straightforward implementation of the
 # Citation
 
 If you use **nekStab**, please consider citing one of the following papers :
+- [Loiseau et al. (2019)](https://arxiv.org/pdf/1804.03859.pdf) presents most of the theoretical framework underlying **nekStab**.
+```bibtex
+@incollection{chapter:loiseau:2019,
+  title={Time-stepping and Krylov methods for large-scale instability problems},
+  author={Loiseau, J.-Ch. and Bucci, M. A. and Cherubini, S. and Robinet, J.-Ch.},
+  booktitle={Computational Modelling of Bifurcations and Instabilities in Fluid Dynamics},
+  pages={33--73},
+  year={2019},
+  publisher={Springer}
+}
+```
 - [Loiseau et al. (*J. Fluid Mech.*, 2014)](https://sam.ensam.eu/bitstream/handle/10985/8974/DYNFLUID-JFM-LOISEAU-2014.pdf?sequence=1&isAllowed=y) describes the first implementation of the Arnoldi solver in Nek5000.
 ```bibtex
 @article{jfm:loiseau:2014,
