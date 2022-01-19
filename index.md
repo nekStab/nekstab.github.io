@@ -2,6 +2,9 @@
 layout: default
 ---
 
+|:---:|:---:|:---:|:---:|
+|[Home](./)|[News]()|[Showcase]()|[Documentation]()|
+
 Transition to turbulence is a long-standing problem in fluid dynamics, pioneered by [Osbourne Reynolds](https://en.wikipedia.org/wiki/Osborne_Reynolds) as early as 1883.
 Today, numerous tools from dynamical system theory can be used to improve our understanding of this process, yet, few libraries are available for generic [CFD](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) solvers.
 **nekStab** is one of them.
@@ -44,3 +47,10 @@ nekbmpi 1cyl 4
 ```
 
 More information about compiling the code on Mac OS or optional packages is available in the [**Documentation**](https://ricardofrantz.github.io/nekStabDoc/en/master/index.html).
+
+# Core components
+
+- **Krylov subspace methods :** At its core **nekStab** relies on [Krylov subspace methods](https://en.wikipedia.org/wiki/Krylov_subspace) for most large-scale linear algebra tasks.
+The most important one is the [Arnoldi iteration](https://en.wikipedia.org/wiki/Arnoldi_iteration) on top of which are build a [GMRES](https://en.wikipedia.org/wiki/Generalized_minimal_residual_method) solver for linear systems of equations, a [Krylov-Schur](404) method for eigenvalue analysis and [Lanczos](https://en.wikipedia.org/wiki/Lanczos_algorithm) algorithm for singular value decomposition of the linearized Navier-Stokes operator.
+- **Fixed points and periodic orbits :**
+- **Eigenvalue and singular value analysis :**
