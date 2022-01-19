@@ -2,9 +2,6 @@
 layout: default
 ---
 
-|:---:|:---:|:---:|:---:|
-|[Home](./)|[News]()|[Showcase]()|[Documentation]()|
-
 Transition to turbulence is a long-standing problem in fluid dynamics, pioneered by [Osbourne Reynolds](https://en.wikipedia.org/wiki/Osborne_Reynolds) as early as 1883.
 Today, numerous tools from dynamical system theory can be used to improve our understanding of this process, yet, few libraries are available for generic [CFD](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) solvers.
 **nekStab** is one of them.
@@ -14,12 +11,7 @@ Leveraging Krylov-based techniques and Nek5000's high-performance time-stepping 
 ### News
 
 - **February 2022:** The first release of `nekStab` is available online!
-Its main modules are
-
-    - [x] a Newton-Krylov solver for the computation of fixed points and periodic orbits.
-    - [x] Eigensolver for the computation of the leading eigenpairs of the linearized Navier-Stokes operator for fixed points, and leading Floquet multipliers of  the monodromy matrix for periodic orbits.
-    - [x] Singular value solver for the computation of the leading singular triplets of the linearized Navier-Stokes operator.
-    - [x] Sensitivity analysis to baseflow modification or steady forcing of the eigenvalues.
+Do not hesitate to get in touch with us or check the [GitHub repo]() and [documentation]() if you want to know more.
 
 ---
 
@@ -72,6 +64,10 @@ The *selective frequency damping* method proposed by [Akervik et al. (2006)](htt
 For periodic orbits, additional algorithms include *Dynamic Mode Tracking* by [Queguineur et al. (2019)](https://aip.scitation.org/doi/abs/10.1063/1.5085474) and *Time-delayed Feedback* by [Shaabani-Ardali et al. (2017)](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.2.113904).
 - **Eigenvalue and singular value analysis :** Asymptotic and short-time instabilities are governed by the eigenvalues and singular values, respectively, of the linearized Navier-Stokes operator.
 In **nekStab**, these are computed using a straightforward implementation of the Krylov-Schur solver originally proposed by [Stewart (2002)](https://epubs.siam.org/doi/10.1137/S0895479800371529).
+
+# Showcase
+
+TBA
 
 # Citation
 
