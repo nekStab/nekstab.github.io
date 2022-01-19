@@ -15,10 +15,11 @@ Leveraging Krylov-based techniques and Nek5000's high-performance time-stepping 
 
 - **February 2022:** The first release of `nekStab` is available online!
 Its main modules are
-    -[x] a Newton-Krylov solver for the computation of fixed points and periodic orbits.
-    -[x] Eigensolver for the computation of the leading eigenpairs of the linearized Navier-Stokes operator for fixed points, and leading Floquet multipliers of  the monodromy matrix for periodic orbits.
-    -[x] Singular value solver for the computation of the leading singular triplets of the linearized Navier-Stokes operator.
-    -[x] Sensitivity analysis to baseflow modification or steady forcing of the eigenvalues.
+
+    - [x] a Newton-Krylov solver for the computation of fixed points and periodic orbits.
+    - [x] Eigensolver for the computation of the leading eigenpairs of the linearized Navier-Stokes operator for fixed points, and leading Floquet multipliers of  the monodromy matrix for periodic orbits.
+    - [x] Singular value solver for the computation of the leading singular triplets of the linearized Navier-Stokes operator.
+    - [x] Sensitivity analysis to baseflow modification or steady forcing of the eigenvalues.
 
 ---
 
