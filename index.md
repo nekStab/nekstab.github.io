@@ -50,7 +50,13 @@ More information about compiling the code on Mac OS or optional packages is avai
 
 # Core components
 
+- **Time-stepping strategy :** The aim of **nekStab** is to extend the capabilities of the Nek5000 solver to conduct large-scale bifurcation analysis.
+To do so, a *time-stepping strategy* is employed to massively reduce the memory footprint of such calculations at the expense of an increasing, yet affordable, computational cost.
+For more details about such a strategy, please refer to the original paper by [Edwards et al. (1994)](https://www.sciencedirect.com/science/article/pii/S0021999184710072) or the review by [Loiseau et al. (2019)](https://arxiv.org/pdf/1804.03859.pdf).
 - **Krylov subspace methods :** At its core **nekStab** relies on [Krylov subspace methods](https://en.wikipedia.org/wiki/Krylov_subspace) for most large-scale linear algebra tasks.
 The most important one is the [Arnoldi iteration](https://en.wikipedia.org/wiki/Arnoldi_iteration) on top of which are build a [GMRES](https://en.wikipedia.org/wiki/Generalized_minimal_residual_method) solver for linear systems of equations, a [Krylov-Schur](404) method for eigenvalue analysis and [Lanczos](https://en.wikipedia.org/wiki/Lanczos_algorithm) algorithm for singular value decomposition of the linearized Navier-Stokes operator.
-- **Fixed points and periodic orbits :**
-- **Eigenvalue and singular value analysis :**
+- **Fixed points and periodic orbits :** Several algorithms are included to compute stable and unstable fixed points or periodic orbits of the Navier-Stokes equations, the most efficient one being a [Newton-Krylov](https://en.wikipedia.org/wiki/Newton%E2%80%93Krylov_method) solver.
+The *selective frequency damping* method proposed by [Akervik et al. (2006)](https://www.mech.kth.se/~luca/papers/SFD_PoF.pdf) and *BoostConv* by [Citro et al. (2017)](https://www.sciencedirect.com/science/article/pii/S0021999117303698?casa_token=XtEKhWIYrQAAAAAA:PE_AnCzzNSRfbclSvA5NEtxUsBgQTwh38bH0NG3a9l1NRaDMFYnYqbsZb9Wb_ItjlynZHX7cavEK) are also proposed to compute fixed points.
+For periodic orbits, additional algorithms include *Dynamic Mode Tracking* by [Queguineur et al. (2019)](https://aip.scitation.org/doi/abs/10.1063/1.5085474) and *Time-delayed Feedback* by [Shaabani-Ardali et al. (2017)](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.2.113904).
+- **Eigenvalue and singular value analysis :** Asymptotic and short-time instabilities are governed by the eigenvalues and singular values, respectively, of the linearized Navier-Stokes operator.
+In **nekStab**, these are computed using a straightforward implementation of the Krylov-Schur solver originally proposed by [Stewart (2002)](https://epubs.siam.org/doi/10.1137/S0895479800371529).
