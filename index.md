@@ -11,6 +11,17 @@ Today, numerous tools from dynamical system theory can be used to improve our un
 Its aim is to extend the capabilities of [Nek5000](https://nek5000.mcs.anl.gov/), a well established spectral element solver in the academic hydrodynamic and aerodynamic community.
 Leveraging Krylov-based techniques and Nek5000's high-performance time-stepping capabilities, **nekStab** provides a set of algorithms to compute stable and unstable fixed points or periodic orbits of the Navier-Stokes equations as well as quantifying their stability properties through eigenvalue or singular value analysis.
 
+### News
+
+- **February 2022:** The first release of `nekStab` is available online!
+Its main modules are
+    [x] a Newton-Krylov solver for the computation of fixed points and periodic orbits.
+    [x] Eigensolver for the computation of the leading eigenpairs of the linearized Navier-Stokes operator for fixed points, and leading Floquet multipliers of  the monodromy matrix for periodic orbits.
+    [x] Singular value solver for the computation of the leading singular triplets of the linearized Navier-Stokes operator.
+    [x] Sensitivity analysis to baseflow modification or steady forcing of the eigenvalues.
+
+---
+
 # Getting started
 
 **nekStab** is a toolbox written in `Fortran 90` for the spectral element solver Nek500.
