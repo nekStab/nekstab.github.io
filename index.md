@@ -64,7 +64,7 @@ In **nekStab**, these are computed using a straightforward implementation of the
 # Citation
 
 If you use **nekStab**, please consider citing one of the following papers :
-- [Loiseau et al. (*J. Fluid Mech.*, 2014)] describes the first implementation of the Arnoldi solver in Nek5000.
+- [Loiseau et al. (*J. Fluid Mech.*, 2014)](https://sam.ensam.eu/bitstream/handle/10985/8974/DYNFLUID-JFM-LOISEAU-2014.pdf?sequence=1&isAllowed=y) describes the first implementation of the Arnoldi solver in Nek5000.
 ```bibtex
 @article{jfm:loiseau:2014,
     title={Investigation of the roughness-induced transition: global stability analyses and direct numerical simulations},
