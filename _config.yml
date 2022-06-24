@@ -5,6 +5,6 @@ google_analytics:
 theme: jekyll-theme-cayman
 github:
   repository_name: nekStab
-  repository_url: https://github.com/ricardofrantz/nekStab
+  repository_url: https://github.com/nekStab/nekStab
   is_project_page: true
   owner_name: Jean-Christophe Loiseau and Ricardo Frantz

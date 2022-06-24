@@ -11,7 +11,7 @@ Leveraging Krylov-based techniques and Nek5000's high-performance time-stepping 
 ### News
 
 - **February 2022:** The first release of `nekStab` is available online!
-Do not hesitate to get in touch with us or check the [GitHub repo]() and [documentation]() if you want to know more.
+Do not hesitate to get in touch with us or check the [GitHub repo](https://github.com/nekStab/nekStab) and [documentation]() if you want to know more.
 
 ---
 
